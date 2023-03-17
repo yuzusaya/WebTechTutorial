@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>question 11</title>
+	<style type="text/css">ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: red;
+  color: white !important
+}
+
+.days li .holiday {
+  padding: 5px;
+  background: blue;
+  color: white !important
+}
+
+.days li .other{
+  padding: 5px;
+  background: green;
+  color: white !important
+}
+
+.days li .last{
+	padding: 5px;
+  background: grey;
+  color: white !important
+}
+</style>
+</head>
+<body>
+
+<div class="month"> 
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>March<br><span style="font-size:18px">2019</span></li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li><li>Tu</li><li>We</li><li>Th</li><li>Fr</li><li>Sa</li><li>Su</li>
+</ul>
+
+<ul class="days"> 
+  <li><span class="last">25</span></li><li><span class="last">26</span></li><li><span class="last">27</span></li><li><span class="last">28</span></li><li><span class="other">1</span></li><li><span class="other">2</span></li><li><span class="active">3</span></li>
+  <li><span class="other">4</span></li><li><span class="holiday">5</span></li><li><span class="other">6</span></li><li><span class="other">7</span></li><li><span class="other">8</span></li><li><span class="other">9</span></li><li><span class="active">10</span></li>
+  <li><span class="other">11</span></li><li><span class="other">12</span></li><li><span class="other">13</span></li><li><span class="other">14</span></li><li><span class="other">15</span></li><li><span class="other">16</span></li><li><span class="active">17</span></li>
+  <li><span class="other">18</span></li><li><span class="other">19</span></li><li><span class="other">20</span></li><li><span class="other">21</span></li><li><span class="other">22</span></li><li><span class="other">23</span></li><li><span class="active">24</span></li>
+  <li><span class="other">25</span></li><li><span class="other">26</span></li><li><span class="other">27</span></li><li><span class="other">28</span></li><li><span class="other">29</span></li><li><span class="other">30</span></li><li><span class="active">31</span></li>
+</ul>
+
+
+</body>
+</html>
