@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>question7</title>
+</head>
+
+<body>
+	Please insert the word you see below:<br>
+	<h1>I like Javascript</h1>
+	<input type="text" id="ans" onkeyup="validate()">
+<script type="text/javascript">
+	    function validate() {
+        var answer = document.getElementById("ans");
+        var ans = answer.value;
+        if(ans!="I like Javascript")
+        	answer.style.backgroundColor="red";
+        else
+        	answer.style.backgroundColor="green";
+        }
+</script>
+</body>
+</html>

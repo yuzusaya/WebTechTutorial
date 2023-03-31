@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>question 1</title>
+	<script type="text/javascript">
+		function addition()
+		{
+			var a = parseFloat(document.getElementById("first").value);
+			var b = parseFloat(document.getElementById("second").value);
+			var ans = a+b;
+			document.getElementById("ans").innerHTML="Result: "+ans;
+		}
+		function subtraction()
+		{
+			var a = parseFloat(document.getElementById("first").value);
+			var b = parseFloat(document.getElementById("second").value);
+			var ans = a-b;
+			document.getElementById("ans").innerHTML="Result: "+ans;
+		}
+		function multiplication()
+		{
+			var a = parseFloat(document.getElementById("first").value);
+			var b = parseFloat(document.getElementById("second").value);
+			var ans = a*b;
+			document.getElementById("ans").innerHTML="Result: "+ans;
+		}
+		function division()
+		{
+			var a = parseFloat(document.getElementById("first").value);
+			var b = parseFloat(document.getElementById("second").value);
+			var ans = a/b;
+			document.getElementById("ans").innerHTML="Result: "+ans;
+		}
+	</script>
+</head>
+<body>
+	First number: <input id="first" type="number"><br>
+	Second number: <input id="second" type="number"><br>
+	<p id="ans"></p>
+	<button onclick="addition()">Addition</button>
+	<button onclick="subtraction()">Subtraction</button>
+	<button onclick="multiplication()">Multiplication</button>
+	<button onclick="division()">Division</button>
+	
+</body>
+</html>

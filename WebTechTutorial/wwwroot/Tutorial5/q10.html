@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>question10</title>
+	<script type="text/javascript">
+		function findword()
+		{
+			var arr = "Programming the world wide web";
+			var position = arr.indexOf("web");
+			document.getElementById("ans").innerHTML="The word \"web\" are found at index location "+position;
+		}
+	</script>
+</head>
+<body>
+	<p>Programming the world wide web</p>
+<button onclick="findword()">Search</button>
+<p id="ans"></p>
+</body>
+</html>

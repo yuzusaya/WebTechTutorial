@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>question2</title>
+	<script type="text/javascript">
+		var array = [3,5,7,8,9];
+		function findnumber()
+		{
+			number = parseInt(document.getElementById("num").value);
+			if(array.includes(number))
+				document.getElementById("ans").innerHTML=number+" is found in array";
+			else
+				document.getElementById("ans").innerHTML=number+" is not found in array";
+		}
+	</script>
+</head>
+<body>
+	Number: <input type="number" id="num"><br>
+	<button onclick="findnumber()">Search</button>
+<p id="ans"></p>
+</body>
+</html>
